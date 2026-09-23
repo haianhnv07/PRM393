@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'core_widgets_demo.dart';
 import 'input_controls_demo.dart';
+import 'layout_demo.dart';
+import 'app_structure_demo.dart';
+import 'ui_fix_demo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,6 +42,7 @@ class HomeScreen extends StatelessWidget {
               );
             },
           ),
+
           ListTile(
             title: const Text("Exercise 2"),
             onTap: () {
@@ -46,6 +50,42 @@ class HomeScreen extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (_) => const InputControlsDemo(),
+                ),
+              );
+            },
+          ),
+
+          ListTile(
+            title: const Text("Exercise 3"),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => const LayoutDemo(),
+                ),
+              );
+            },
+          ),
+
+          ListTile(
+            title: const Text("Exercise 4"),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => const AppStructureDemo(),
+                ),
+              );
+            },
+          ),
+
+          ListTile(
+            title: const Text("Exercise 5"),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => const UIFixDemo(),
                 ),
               );
             },
